@@ -101,7 +101,7 @@ h3 {
   color: rgba(47, 43, 43, 0.5);
   position: relative;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 2.5vw;
 }
 
 .nav a::before,
@@ -250,12 +250,15 @@ h3 {
 @media all and (max-width: 1000px) {
   .dropdown {
     visibility: visible;
-  }
+  }  
 
   .nav a {
-    /* font-size: 40px; */
-    font-size: 400%;
-    
+    font-size: 5vw;
+    /* font-size: 200%; */
+  }
+
+  .nav {
+    size-adjust: 50%;
   }
 
   .homeText{
