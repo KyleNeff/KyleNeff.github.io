@@ -6,6 +6,10 @@ font-family: 'Titillium Web';
   padding: 15px 0;
 }
 
+.sidebar{
+  visibility: visible;
+}
+
 .sidebar img{
   border-radius: 50%;
   width: 10%;
@@ -52,6 +56,8 @@ main {
   align-items: center;
   text-align: left;
   line-height: 0.3;
+  width: 20%;
+  z-index: 1;
 }
 h1 {
     font-size: 28px;
@@ -140,9 +146,11 @@ h3 {
   padding-top: 0;
   position: relative;
   margin-top: -80px;
-  padding-left: 250px;
+  padding-left: 18%;
   text-align: left;
-  margin-right: 250px;
+  /* margin-right: 100px; */
+  margin-right: 10%;
+  margin-left: 5%;
   line-height: 2;
 }
 
@@ -184,4 +192,82 @@ h3 {
 
 .homeText .intro h1{
   font-size: 24px;
+}
+
+/* Default styles outside media query */
+.dropdown {
+  visibility: collapse; /* Hide dropdown by default */
+  float: right;
+  overflow: hidden;
+  padding-right: 5%;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: gray;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: lightgrey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  /* direction:rtl; */
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  margin-bottom: 0px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Media query to apply styles only for max-width: 375px */
+@media all and (max-width: 1000px) {
+  .dropdown {
+    visibility: visible;
+  }
+
+  .nav a {
+    /* font-size: 40px; */
+    font-size: 400%;
+    
+  }
+
+  .homeText{
+    margin-left: -5%;
+  }
+  
+  .homeText p{
+    font-weight:normal;
+    /* font-size: 12px; */
+    font-size: 90%;
+  }
+  .sidebar {
+    visibility: hidden; /* Hide sidebar */
+  }
 }
