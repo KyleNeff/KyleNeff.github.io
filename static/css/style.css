@@ -20,7 +20,7 @@ font-family: 'Titillium Web';
 }
 
 .align-top {
-  vertical-align: bottom; /* Align text to the top */
+  vertical-align: bottom;
 }
 
 td img[src="locationIcon.png"] {
@@ -32,12 +32,12 @@ td img[src="locationIcon.png"] {
 }
 
 .icon-link {
-  color: black; /* Change the color to black */
-  text-decoration: none; /* Remove the underline */
+  color: black; 
+  text-decoration: none;
 }
 
 .icon-link:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline;
 }
 
 main {
@@ -146,7 +146,6 @@ h3 {
   position: relative;
   margin-top: -80px;
   text-align: left;
-  /* margin-right: 100px; */
   margin-right: 0%;
   margin-left: 20%;
   line-height: 2;
@@ -192,9 +191,8 @@ h3 {
   font-size: 24px;
 }
 
-/* Default styles outside media query */
 .dropdown {
-  visibility: collapse; /* Hide dropdown by default */
+  visibility: collapse;
   float: right;
   overflow: hidden;
   padding-right: 5%;
@@ -206,7 +204,6 @@ h3 {
   border: none;
   outline: none;
   color: gray;
-  /* padding: 14px 16px; */
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -226,7 +223,6 @@ h3 {
 }
 
 .dropdown-content a {
-  /* direction:rtl; */
   float: none;
   color: black;
   padding: 12px 16px;
@@ -244,7 +240,6 @@ h3 {
   display: block;
 }
 
-/* Media query to apply styles only for max-width: 375px */
 @media all and (max-width: 1000px) {
   .dropdown {
     visibility: visible;
@@ -252,7 +247,6 @@ h3 {
 
   .nav a {
     font-size: 5vw;
-    /* font-size: 200%; */
   }
 
   .nav {
@@ -266,10 +260,9 @@ h3 {
   
   .homeText p{
     font-weight:normal;
-    /* font-size: 12px; */
     font-size: 90%;
   }
   .sidebar {
-    visibility: hidden; /* Hide sidebar */
+    visibility: hidden;
   }
 }
